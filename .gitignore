@@ -1,0 +1,16 @@
+﻿# Virtual Environment
+.venv/
+__pycache__/
+
+# Secrets
+.env
+
+# Logs
+*.log
+
+
+quiz_server.py
+project_run.log
+
+# Virtual Environment directory
+.venv/
