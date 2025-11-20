@@ -1,4 +1,13 @@
-﻿from fastapi import FastAPI, BackgroundTasks, HTTPException, Request
+﻿import sys
+import asyncio
+import platform
+
+# --- WINDOWS PLAYWRIGHT FIX ---
+# This prevents "NotImplementedError" when using Playwright with FastAPI on Windows
+if platform.system() == 'Windows':
+    asyncio.set_event_loop_policy(asyncio.WindowsProactorEventLoopPolicy())
+
+from fastapi import FastAPI, BackgroundTasks, HTTPException, Request
 from pydantic import BaseModel
 import uvicorn
 import time

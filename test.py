@@ -6,7 +6,7 @@ import json
 TEST_PAYLOAD = {
     "email": "23f2000790@ds.study.iitm.ac.in",
     "secret": "vivek-tds-p1-15-key-secret",
-    "url": "https://tds-llm-analysis.s-anand.net/demo"
+    "url": "http://127.0.0.1:8001/quiz/9"
 }
 # -----------------------------------
 
